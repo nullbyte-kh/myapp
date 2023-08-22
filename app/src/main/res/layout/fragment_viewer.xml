@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.myapplication.PinchImageView
+            android:id="@+id/zoom_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333337"/>
+
+        <LinearLayout
+            android:id="@+id/option_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="#683A4757"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/iconEyeProtect"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="#006600"/>
+            <ImageView
+                android:id="@+id/iconZoom"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="#006600"/>
+
+            <ImageView
+                android:id="@+id/iconClose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="#006600"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
